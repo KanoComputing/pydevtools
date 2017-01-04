@@ -1,7 +1,12 @@
-# kano.logging
-#
-# Copyright (C) 2015 Kano Computing Ltd.
-# License: http://www.gnu.org/licenses/gpl-2.0.txt GNU General Public License v2
+# -*- coding: utf-8 -*-
+"""
+  pydevtools.pydebug
+  ~~~~~~~~~~~~~~~~~~
+  :copyright: (c) 2017 Kano Computing Ltd.
+  :license: GPL, see LICENSE for more details.
+
+  A set of function to start the python debugger.
+"""
 
 # Start the python debugger
 def start_term(a, b):

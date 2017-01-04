@@ -1,14 +1,13 @@
-# profiling_late.py
-#
-# Copyright (C) 2015 Kano Computing Ltd.
-# License: http://www.gnu.org/licenses/gpl-2.0.txt GNU General Public License v2
-#
-#
+# -*- coding: utf-8 -*-
+""" 
+  pydevtools.profiling_late
+  ~~~~~~~~~~~~~~~~~~~~~~~~~
+  :copyright: (c) 2017 Kano Computing Ltd.
+  :license: GPL, see LICENSE for more details.
 
-'''
 Module to enable profiling timepoints. This module is loaded
-only if the configuration file exists, see profiling.py for more information
-'''
+only if the configuration file exists. See profiling.py for more information.
+"""
 
 import os
 import sys
