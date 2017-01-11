@@ -1,6 +1,6 @@
 # profiling.py
 #
-# Copyright (C) 2015 Kano Computing Ltd.
+# Copyright (C) 2015, 2017 Kano Computing Ltd.
 # License: http://www.gnu.org/licenses/gpl-2.0.txt GNU General Public License v2
 #
 
@@ -36,18 +36,15 @@
 
 import os
 CONF_FILE = '/etc/pydevtools.yaml'
-
-isConf = os.path.exists(CONF_FILE)
-
-defaultConf = {
+DEFAULT_CONF = {
     # TODO: complete settings needed here
     'app_name': 'pydevtools'
     }
 
 
-def declare_timepoint(name, isStart):
+def declare_timepoint(name, is_start):
     if not isConf:
         return
     else:
         import profiling_late
-        profiling_late.declare_timepoint(name, isStart)
+        profiling_late.declare_timepoint(name, is_start)
