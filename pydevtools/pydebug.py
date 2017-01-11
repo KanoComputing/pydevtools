@@ -1,12 +1,12 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""
-  pydevtools.pydebug
-  ~~~~~~~~~~~~~~~~~~
-  :copyright: (c) 2017 Kano Computing Ltd.
-  :license: GPL, see LICENSE for more details.
 
-  A set of function to start the python debugger.
 """
+pydebug.py is a set of functions to start the python debugger.
+"""
+
+__copyright__ = "Copyright 2017, Kano Computing Ltd."
+__license__ = "GPLv2"
 
 # Start the python debugger
 def start_term(a, b):

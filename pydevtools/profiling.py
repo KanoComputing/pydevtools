@@ -1,11 +1,9 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""
-  pydevtools.profiling
-  ~~~~~~~~~~~~~~~~~~~~
-  :copyright: (c) 2017 Kano Computing Ltd.
-  :license: GPL, see LICENSE for more details.
 
-This module is intended to allow profiling of individual 'transitions'.
+"""
+profiling.py is intended to allow profiling of individual 'transitions'.
+
 It should be low overhead if its configuration file does not exist, which
 will be the case on production images.
 
@@ -36,6 +34,9 @@ Example 2: Run a command at start and end of a timepoint (e.g. perf or bootchart
         end_exec:
             touch /tmp/pong_load_ended
 """
+
+__copyright__ = "Copyright 2017, Kano Computing Ltd."
+__license__ = "GPLv2"
 
 import os
 CONF_FILE = '/etc/kano-profiling.conf'
