@@ -35,9 +35,14 @@
 '''
 
 import os
-CONF_FILE = '/etc/kano-profiling.conf'
+CONF_FILE = '/etc/pydevtools.yaml'
 
 isConf = os.path.exists(CONF_FILE)
+
+defaultConf = {
+    # TODO: complete settings needed here
+    'app_name': 'pydevtools'
+    }
 
 
 def declare_timepoint(name, isStart):
