@@ -4,7 +4,7 @@
 
 def test_import_modules():
     import sys
-    sys.path.append('..')
+    sys.path.append('.')
 
     import pydevtools.profiling
     import pydevtools.profiling_late
