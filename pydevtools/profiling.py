@@ -49,5 +49,5 @@ def declare_timepoint(name, isStart):
     if not isConf:
         return
     else:
-        import kano.profiling_late
-        kano.profiling_late.declare_timepoint(name, isStart)
+        import profiling_late
+        profiling_late.declare_timepoint(name, isStart)
