@@ -4,6 +4,10 @@ from distutils.core import setup
 import pydevtools
 
 
+with open('requirements.txt', 'r') as req_f:
+    REQUIREMENTS = req_f.readlines()
+
+
 setup(
     name='pydevtools',
     version=pydevtools.__version__,
@@ -16,5 +20,6 @@ setup(
     packages=[
         'pydevtools'
     ],
-    license=pydevtools.__license__
+    license=pydevtools.__license__,
+    install_requires=REQUIREMENTS
 )
